@@ -391,6 +391,10 @@ input[type="submit"] {
   font-size: 18px;
 }
 
+/* Footer section */
+.footer {
+  margin-top: 50px;
+}
 /* Media queries */
 
 @media (min-width: 40em) {
