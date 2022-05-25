@@ -3,6 +3,15 @@ html {
 }
 
 :root {
+  /* --clr-primary-200: #F9F5ED;
+  --clr-primary-400: #171717;
+
+  --clr-neutral-100: #F9F5ED;
+  --clr-neutral-900: #171717; */
+
+  /* --ff-primary: "Roboto", sans-serif;
+  --ff-accent: "Playfair Display", serif; */
+
   --clr-white: #f9f5ed;
   --clr-black: #171717;
   --clr-orange: #ffa316;
@@ -43,12 +52,14 @@ p {
 h1 {
   color: var(--clr-black);
   font-family: var(--ff-primary);
+  /* font-weight: 900; */
   line-height: 1;
 }
 
 h2 {
   color: var(--clr-primary-400);
   font-family: var(--ff-primary);
+  /* font-weight: 900; */
   line-height: 1;
 }
 
@@ -74,6 +85,15 @@ section {
   padding: 3rem 0;
 }
 
+/* @media (min-width: 40em) {
+  header,
+  section {
+    padding: 7rem 0;
+  }
+} */
+
+/* Making every container and split responsive */
+
 .container {
   margin-inline: auto;
   width: min(90%, 70.5rem);
@@ -83,6 +103,24 @@ section {
   display: flex;
   flex-direction: column;
 }
+
+/* @media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2em;
+  }
+}
+
+.container--narrow {
+  max-width: 34rem;
+} */
 
 /* Styling all sections */
 
@@ -100,6 +138,11 @@ section {
   color: var(--clr-white);
   background-color: var(--clr-black);
 }
+
+/* .bg-primary h2,
+.bg-dark h2 {
+  color: var(--clr-primary-200);
+} */
 
 /* This is the navbar */
 
@@ -179,6 +222,33 @@ nav.list {
   transform-origin: left;
 }
 
+/* Navbar responsive */
+
+/* @media (min-width: 40em) {
+  .responsive2 {
+    flex-direction: row;
+  }
+
+  .responsive2 > * {
+    flex-basis: 100%;
+  }
+
+  .responsive2 > * + * {
+    margin-left: 2em;
+  }
+}
+
+@media (max-width: 390px) {
+  .logo {
+    visibility: hidden;
+  }
+}
+@media (max-width: 723px) {
+  .logo {
+    visibility: hidden;
+  }
+} */
+
 /* My skill section */
 
 .gallery {
@@ -198,9 +268,72 @@ nav.list {
   text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+/* My skill section responsive */
+
+/* @media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+} */
+
+/* Portfolio section */
+
+.gallery2 {
+  margin: 5px;
+  float: left;
+}
+
+.gallery2 img {
+  width: 100%;
+  height: auto;
+}
+
+/* Hover animation for portfolio */
+
+/* .gallery2 {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+.img__description {
+  position: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+  font-size: 16px;
+}
+
+.gallery2:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+} */
+
+>>>>>>> parent of 64a2ffa (removed comments)
 /* portfolio scrimba */
 
 .my-work {
+  /* background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-900); */
   text-align: center;
 }
 
