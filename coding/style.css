@@ -86,7 +86,7 @@ section {
 
 /* Styling all sections */
 
-.bg-light {
+.bg-home {
   background-color: var(--clr-black);
   background-image: url(images/keanu.jpg);
   background-position: center;
@@ -96,12 +96,7 @@ section {
   height: 1080px;
 }
 
-.bg-primary {
-  color: var(--clr-white);
-  background-color: var(--clr-black);
-}
-
-.bg-dark {
+.bg-sections {
   color: var(--clr-white);
   background-color: var(--clr-black);
 }
@@ -203,18 +198,6 @@ nav.list {
   text-align: center;
 }
 
-/* Portfolio section */
-
-.gallery2 {
-  margin: 5px;
-  float: left;
-}
-
-.gallery2 img {
-  width: 100%;
-  height: auto;
-}
-
 /* portfolio scrimba */
 
 .my-work {
@@ -306,15 +289,15 @@ input[type="submit"] {
 }
 
 @media (min-width: 40em) {
-  .responsive2 {
+  .navbar {
     flex-direction: row;
   }
 
-  .responsive2 > * {
+  .navbar > * {
     flex-basis: 100%;
   }
 
-  .responsive2 > * + * {
+  .navbar > * + * {
     margin-left: 2em;
   }
 }
